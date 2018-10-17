@@ -4,10 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListTypeModule } from './list-type/list-type.module';
+import { FilterWordByGroupIdPipe } from './list-type/filter-word-by-group-id.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -15,6 +17,7 @@ import { ListTypeModule } from './list-type/list-type.module';
     ListTypeModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: []
 })
 export class AppModule { }

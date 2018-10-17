@@ -1,3 +1,20 @@
-<p>
-  list works!
-</p>
+<div>
+    <div>
+        <ul class="list-primary">
+            <li *ngFor="let gr of groups"  
+            (click)="onClickGroup(gr)"
+            [class.selected]="selectedGroup.id === gr.id">
+              <!-- <input type="checkbox" (click)=""> -->
+              {{gr.name}}
+            </li>
+          </ul>
+          <p>Group selected: {{selectedGroup.name}} / {{selectedGroup.id}}</p>
+    </div>
+    <div *ngIf="selectedGroup.id">
+      <ul class="list-primary">
+        <li *ngFor="let wrd of words | filterWordByGroupId:maps:selectedGroup.id">
+          {{wrd.name}}
+        </li>
+      </ul>
+    </div>
+</div>

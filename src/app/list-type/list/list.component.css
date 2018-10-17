@@ -1,0 +1,16 @@
+
+.list-primary{
+    background-color: aqua;
+    width: 200px;
+    padding: 0.5em;
+    list-style: none;
+    
+}
+.list-primary li {
+    cursor: pointer;
+    padding: 0 0.2em;
+}
+.selected{
+    background: cornflowerblue;
+    color: #fff;
+}
