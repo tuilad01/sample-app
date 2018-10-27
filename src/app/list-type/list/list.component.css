@@ -1,4 +1,7 @@
-
+header{
+    padding: 1em;
+    color: #fff;
+}
 .list-primary{
     background-color: aqua;
     width: 200px;
@@ -13,4 +16,15 @@
 .selected{
     background: cornflowerblue;
     color: #fff;
+}
+.button-right{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px 20px;    
+    grid-auto-columns: 1;
+}   
+@media (min-width: 768px) {
+    .button-right{
+        grid-template-columns: repeat(5, 1fr);
+    }
 }

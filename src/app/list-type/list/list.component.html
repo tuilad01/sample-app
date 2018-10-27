@@ -1,10 +1,75 @@
-<div>
+<header style="background-color: darkslategray">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <h1>english</h1>
+      </div>
+      <div class="col-md-8">
+        <div class="button-right">
+          <button class="btn btn-primary">
+            Start
+          </button>
+          <button class="btn btn-info">
+            Group
+          </button>
+          <button class="btn btn-info">
+            Word
+          </button>
+          <button class="btn btn-secondary">
+            Export
+          </button>
+          <button class="btn btn-success">
+            Import
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="container">
+  <div class="row">
+    <div class="col-md-5" style="background-color: #eee; padding: 1em; border: 1px solid #dedede;">
+      <h3>Group</h3>
+      <form class="form">
+        <div class="form-group row">
+          <label for="name-group" class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-10">
+            <input type="text" name="name-group" id="name-group" class="form-control" placeholder="Name">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-7" style="background-color: #eee; padding: 1em; border: 1px solid #dedede;">
+        <h3>Word</h3>
+      <form class="form">
+        <div class="form-group row">
+          <label for="name-word" class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-10">
+            <input type="text" name="name-word" id="name-word" class="form-control" placeholder="Word's name">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="mean-word" class="col-sm-2 col-form-label">Mean</label>
+          <div class="col-sm-10">
+            <input type="text" name="mean-word" id="mean-word" class="form-control" placeholder="Word's mean">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- <div>
     <div>
         <ul class="list-primary">
             <li *ngFor="let gr of groups"  
             (click)="onClickGroup(gr)"
             [class.selected]="selectedGroup.id === gr.id">
-              <!-- <input type="checkbox" (click)=""> -->
+              
               {{gr.name}}
             </li>
           </ul>
@@ -17,4 +82,4 @@
         </li>
       </ul>
     </div>
-</div>
+</div> -->
